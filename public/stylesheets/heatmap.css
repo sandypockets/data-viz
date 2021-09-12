@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Mohave;
+    src: url("../fonts/mohave-light.woff2"), url("../fonts/mohave-light.woff");
+}
+
+@font-face {
+    font-family: Mohave;
+    font-weight: 700;
+    src: url("../fonts/mohave-bold.woff2"), url("../fonts/mohave-bold.woff");
+}
+
+:root {
+    --background: #272727;
+    --text-color: #ffffff;
+}
+
+body {
+    margin: 160px auto 80px auto;
+    background-color: var(--background);
+    color: var(--text-color);
+    font-family: Mohave;
+    font: 16px;
+    line-height: 1.25;
+    width: 800px;
+}
+
+a {
+    color: #00B7FF;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+select {
+    margin: 24px;
+    border: none;
+    color: white;
+    background-color: var(--background);
+}
+
+select:focus {
+    outline: none;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    max-width: 400px;
+    padding-left: 55px;
+    margin-left: 24px;
+    background-image: url("../images/temp.svg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+
+/* SVG Styling */
+text {
+    fill: var(--text-color);
+    text-anchor: end;
+}
+
+text.city {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+text.temp {
+    text-anchor: middle;
+    dominant-baseline: middle;
+    font-size: 18px;
+    font-weight: 700;
+    transition: opacity 0.3s;
+}
+
+circle {
+    fill: var(--text-color);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+path {
+    stroke: var(--text-color);
+    stroke-width: 4px;
+    fill: none;
+    transition: opacity 0.3s;
+}
+
+g.data-point:hover circle {
+    opacity: 1;
+}
+
+g.data-point:hover path {
+    opacity: 0;
+}

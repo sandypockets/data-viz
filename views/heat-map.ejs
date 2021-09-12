@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/heatmap.css' />
+</head>
+<body>
+
+<header>
+    <h1>Compare monthly temperatures across the globe</h1>
+    <select>
+        <option value="C">Celsius</option>
+        <option value="F">Fahrenheit</option>
+    </select>
+</header>
+
+<svg></svg>
+
+</body>
+<script src="/data/weatherData.js"></script>
+<script src="/javascripts/d3.min.js"></script>
+<script type="text/javascript" src="/javascripts/heatmap.js"></script>
+</html>
