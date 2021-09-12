@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --background: #ffffd0;
+    --text-color: #111118;
+    --imdb: #e4160d;
+    --metascore: #177a7d;
+    --highlight: rgba(0, 0, 0, 0.05)
+}
+
+body {
+    padding: 50px;
+    font: 18px "Space Mono", Helvetica, Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background);
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main > div {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #00B7FF;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 36px;
+    border-bottom: 3px solid var(--text-color);
+    background-color: var(--background);
+    position: sticky;
+    top: 0;
+}
+
+span {
+    margin: 0 10px;
+}
+
+span.imdb {
+    color: var(--imdb);
+}
+
+span.metascore {
+    color: var(--metascore);
+}
+
+text {
+    dominant-baseline: middle;
+}
+
+text.title {
+    font-weight: 700;
+}
+
+circle.imdb {
+    fill: var(--imdb);
+}
+
+circle.metascore {
+    fill: var(--metascore);
+}
+
+rect.background {
+    fill: var(--highlight);
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+g.movie:hover rect.background {
+    opacity: 1;
+}
+
+path.imdb {
+    fill: none;
+    stroke: var(--imdb);
+    stroke-width: 5px;
+}
+
+path.metascore {
+    fill: none;
+    stroke: var(--metascore);
+    stroke-width: 5px;
+}
+
+path.area {
+    fill: var(--highlight);
+}
+
+text.imdb {
+    fill: var(--imdb);
+    font-size: 12px;
+}
+
+text.metascore {
+    fill: var(--metascore);
+    font-size: 12px;
+}
