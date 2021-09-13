@@ -5,13 +5,25 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-
+    <header>
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %></p>
+    </header>
     <nav>
-      <a href="/heat-map">City Temperatures</a>
-      <a href="/cost-of-living">Cost of Living</a>
-      <a href="/movie-ratings">Movie Ratings</a>
+      <ul>
+        <li>
+          <a href="/heat-map">City Temperatures</a>
+        </li>
+        <li>
+          <a href="/cost-of-living">Cost of Living</a>
+        </li>
+        <li>
+          <a href="/movie-ratings">Movie Ratings</a>
+        </li>
+        <li>
+          <a href="/name-rankings">Name Rankings</a>
+        </li>
+      </ul>
     </nav>
   </body>
 </html>
