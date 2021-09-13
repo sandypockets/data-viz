@@ -17,5 +17,9 @@ router.get('/movie-ratings', function(req, res, next) {
   res.render('movie-ratings', { title: 'Movie Ratings | Data Visualization' });
 });
 
+router.get('/name-rankings', function(req, res, next) {
+  res.render('name-rankings', { title: 'Name Ratings | Data Visualization' });
+});
+
 
 module.exports = router;

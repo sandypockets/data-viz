@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/name-rankings.css' />
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>
+            Name Rankings
+        </h1>
+    </header>
+    <form>
+        <h2>Search name popularity between from the 1800s to 2010s</h2>
+        <input type="text" name="name" placeholder="Enter a name" autocomplete="off">
+    </form>
+    <section>
+        <nav>
+            <div>
+                Results for <span class="name">Kobe</span>
+            </div>
+            <div class="key">
+                <span class="male"></span> Male
+                <span class="female"></span> Female
+            </div>
+        </nav>
+        <main>
+            <div>
+                <svg></svg>
+            </div>
+        </main>
+    </section>
+</div>
+</body>
+<script type="text/javascript" src="javascripts/d3.min.js"></script>
+<script type="text/javascript" src="data/namesData.min.js"></script>
+<script type="text/javascript" src="javascripts/nameRankings.js"></script>
+</html>
